@@ -1,0 +1,9 @@
+{
+  "item.gilded.gilded_netherite_helmet": "Gilded Netherite Helmet",
+  "item.gilded.gilded_netherite_chestplate": "Gilded Netherite Chestplate",
+  "item.gilded.gilded_netherite_leggings": "Gilded Netherite Leggings",
+  "item.gilded.gilded_netherite_boots": "Gilded Netherite Boots",
+
+  "advancements.nether.obtain_gilded.title": "Blinged Out",
+  "advancements.nether.obtain_gilded.description": "Obtain a full set of Gilded Netherite Armor"
+}

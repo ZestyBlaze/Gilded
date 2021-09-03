@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.zestyblaze.gilded.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "ArmorItemMixin",
+    "GildedGoldStat"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
