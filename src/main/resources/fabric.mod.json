@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "gilded",
+  "version": "${version}",
+
+  "name": "Gilded Netherite",
+  "description": "A nice simple mod that adds Gilded Netherite to Minecraft! Netherite Armour that doesn't anger Piglins!",
+  "authors": [
+    "ZestyBlaze"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ZestyBlaze/Gilded-Netherite",
+    "sources": "https://github.com/ZestyBlaze/Gilded-Netherite"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.zestyblaze.gilded.GildedMod"
+    ]
+  },
+  "mixins": [
+    "gilded.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  }
+}
