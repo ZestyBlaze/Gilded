@@ -16,14 +16,13 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 import java.util.Iterator;
 
 @Mixin(PiglinBrain.class)
-public abstract class GildedGoldStat {
+public class GildedGoldStat {
     @Inject(method = "wearsGoldArmor", at = @At("RETURN"), cancellable = true, locals = LocalCapture.CAPTURE_FAILHARD)
-    private static void wearsGoldArmor(LivingEntity entity, @NotNull CallbackInfoReturnable<Boolean> cir, @NotNull Iterable<ItemStack> iterable){
+    private static void wearsGoldArmor(@NotNull LivingEntity entity, @NotNull CallbackInfoReturnable<Boolean> cir){
+        Iterable<ItemStack> iterable = entity.getArmorItems();
+        Iterator<ItemStack> var2 = iterable.iterator();
 
-        Iterator var2 = iterable.iterator();
-
-        if(!cir.getReturnValue()){
-
+        if(!cir.getReturnValue()) {
             Item item;
             do {
                 if (!var2.hasNext()) {
@@ -31,9 +30,9 @@ public abstract class GildedGoldStat {
                     return;
                 }
 
-                ItemStack itemStack = (ItemStack)var2.next();
+                ItemStack itemStack = var2.next();
                 item = itemStack.getItem();
-            } while(!(item instanceof ArmorItem) || ((ArmorItem)item).getMaterial() != ArmourInit.GILDED_NETHERITE);
+            } while (!(item instanceof ArmorItem) || ((ArmorItem) item).getMaterial() != ArmourInit.GILDED_NETHERITE);
 
             cir.setReturnValue(true);
         }

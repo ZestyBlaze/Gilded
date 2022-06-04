@@ -4,17 +4,18 @@
   "version": "${version}",
 
   "name": "Gilded Netherite",
-  "description": "A nice simple mod that adds Gilded Netherite to Minecraft! Netherite Armour that doesn't anger Piglins!",
+  "description": "A simple mod that adds Gilded Netherite to Minecraft! Netherite Armour that doesn't anger Piglins!",
   "authors": [
     "ZestyBlaze"
   ],
   "contact": {
-    "homepage": "https://github.com/ZestyBlaze/Gilded-Netherite",
-    "sources": "https://github.com/ZestyBlaze/Gilded-Netherite"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/golden-netherite",
+    "sources": "https://github.com/ZestyBlaze/Gilded",
+    "issues": "https://github.com/ZestyBlaze/Gilded/issues"
   },
 
   "license": "MIT License",
-  "icon": "assets/icon.png",
+  "icon": "assets/gilded/textures/item/gilded_netherite_chestplate.png",
 
   "environment": "*",
   "entrypoints": {
@@ -27,9 +28,9 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": ">=0.12.12",
     "fabric": "*",
-    "minecraft": "1.17.x",
-    "java": ">=16"
+    "minecraft": "1.18.x",
+    "java": ">=17"
   }
 }
