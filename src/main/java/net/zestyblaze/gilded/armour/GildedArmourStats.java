@@ -1,7 +1,6 @@
 package net.zestyblaze.gilded.armour;
 
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.mob.PiglinEntity;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
